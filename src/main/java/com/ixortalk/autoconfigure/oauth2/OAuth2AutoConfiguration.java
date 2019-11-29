@@ -157,7 +157,7 @@ public class OAuth2AutoConfiguration {
                 managementAPIResource.setAccessTokenUri(format("https://%s/oauth/token", ixorTalkAuth0ConfigProperties.getDomain()));
                 managementAPIResource.setClientId(ixorTalkAuth0ConfigProperties.getClientId());
                 managementAPIResource.setClientSecret(ixorTalkAuth0ConfigProperties.getClientSecret());
-                return createAuth0ClientCredentialsRestTemplate(managementAPIResource, format("https://%s/api/v2/", ixorTalkAuth0ConfigProperties.getDomain()));
+                return createAuth0ClientCredentialsRestTemplate(managementAPIResource, ixorTalkAuth0ConfigProperties.getManagementApi().getAudience());
             }
 
             @Bean

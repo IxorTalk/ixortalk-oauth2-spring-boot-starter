@@ -73,11 +73,20 @@ public class IxorTalkAuth0ConfigProperties {
 
     public static class ManagementApi {
 
+        private String audience;
         private Cache userCache = new Cache();
         private Cache rolesCache = new Cache();
         private Cache userRoleCache = new Cache();
 
         private String createUserConnection = "Username-Password-Authentication";
+
+        public String getAudience() {
+            return audience;
+        }
+
+        public void setAudience(String audience) {
+            this.audience = audience;
+        }
 
         public Cache getUserCache() {
             return userCache;
