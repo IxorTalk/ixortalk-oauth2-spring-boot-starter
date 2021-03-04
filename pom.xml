@@ -29,7 +29,7 @@
 
 	<groupId>com.ixortalk</groupId>
 	<artifactId>ixortalk-oauth2-spring-boot-starter</artifactId>
-	<version>1.1.1</version>
+	<version>1.1.2-SNAPSHOT</version>
 
 	<name>ixortalk-oauth2-spring-boot-starter/</name>
 	<description>IxorTalk OAuth2 Spring Boot Starter</description>
@@ -87,7 +87,7 @@
 		<connection>scm:git:git@github.com:ixortalk/ixortalk-oauth2-spring-boot-starter.git</connection>
 		<developerConnection>scm:git:git@github.com:ixortalk/ixortalk-oauth2-spring-boot-starter.git</developerConnection>
 		<url>https://github.com/ixortalk/ixortalk-oauth2-spring-boot-starter/tree/master</url>
-		<tag>ixortalk-oauth2-spring-boot-starter-1.1.1</tag>
+		<tag>HEAD</tag>
 	</scm>
 
 	<distributionManagement>
