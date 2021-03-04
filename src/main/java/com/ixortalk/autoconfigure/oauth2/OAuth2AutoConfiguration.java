@@ -156,6 +156,7 @@ public class OAuth2AutoConfiguration {
             @Override
             protected void configure(HttpSecurity http) throws Exception {
                 http.requestMatcher(toAnyEndpoint())
+                        .csrf().disable()
                         .authorizeRequests((requests) -> requests.anyRequest().permitAll());
             }
         }
